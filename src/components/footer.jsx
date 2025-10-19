@@ -17,38 +17,39 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 max-w-screen-xl mx-auto">
         
       <div className="flex flex-col md:flex-row items-start md:items-center gap-4 w-full md:w-auto">
-  <img
-    src={soundhazeLogo}
-    alt="SoundHaze"
-    className="h-16 w-auto mr-8"
-  />
-
-  <div className="flex flex-col">
-    <div className="flex items-center gap-2">
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter your email"
-        className="w-64 px-2 py-1 rounded bg-transparent border border-gray-600 text-white placeholder-gray-400 text-base focus:outline-none focus:ring-1 focus:ring-gray-400"
+      <img
+        src={soundhazeLogo}
+        alt="SoundHaze"
+        className="h-16 w-auto mr-8"
       />
-      <button
-        onClick={handleSubscribe}
-        className="px-3 py-1 text-base bg-white text-black rounded hover:bg-gray-200 transition"
-      >
-        Subscribe
-      </button>
+
+      <div className="flex flex-col">
+        <div className="flex items-center gap-2">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            className="w-64 px-2 py-1 rounded bg-transparent border border-gray-600 text-white placeholder-gray-400 text-base focus:outline-none focus:ring-1 focus:ring-gray-400"
+          />
+          <button
+            onClick={handleSubscribe}
+            className="px-3 py-1 text-base bg-white text-black rounded hover:bg-gray-200 transition"
+          >
+            Subscribe
+          </button>
+        </div>
+
+        <div className="h-5 mt-1 flex items-center">
+          {subscribed && (
+            <p className="text-sm font-bold text-gray-400 ml-1">
+              Subscribed to SoundHaze!
+            </p>
+          )}
+        </div>
+      </div>
     </div>
 
-    <div className="h-5 mt-1 flex items-center">
-      {subscribed && (
-        <p className="text-sm font-bold text-gray-400 ml-1">
-          Subscribed to SoundHaze!
-        </p>
-      )}
-    </div>
-  </div>
-</div>
 
 
         <div>
