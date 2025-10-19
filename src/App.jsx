@@ -14,7 +14,8 @@ function App() {
         <Header />
         <main className="flex-grow w-full">
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+          <Route path="/SoundHaze-Collectives" element={<Home />} />
           <Route path="/music" element={<Music />} />
           <Route path="/products" element={<Products />} />
           <Route path="/shelves" element={<Shelves />} />

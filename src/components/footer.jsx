@@ -1,4 +1,5 @@
 import { useState } from "react";
+import soundhazeLogo from "../assets/images/soundhaze.png";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -17,7 +18,7 @@ export default function Footer() {
         
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 w-full md:w-auto">
           <img
-            src={"src/assets/images/soundhaze.png"}
+            src={soundhazeLogo}
             alt="SoundHaze"
             className="h-20 w-auto"
           />

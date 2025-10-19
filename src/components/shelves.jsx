@@ -1,15 +1,20 @@
 import ShelvesProduct from "./shelfproduct";
 
+import sh1 from "../assets/images/sh1.png";
+import sh2 from "../assets/images/sh2.png";
+import sh3 from "../assets/images/sh3st.png";
+import sh4 from "../assets/images/sh4st.png";
+import sh5 from "../assets/images/sh5c.png";
+import sh6 from "../assets/images/sh6c.png";
+
 export default function Shelves() {
   const products = [
-    { title: "Wall-Mount Display Shelf", description: "Open-frame shelf for showcasing your favorite records.", imageSrc: "src/assets/images/sh1.png" },
-    { title: "Minimalist Record Rack ", description: "Layered modern shelving for small spaces.", imageSrc: "src/assets/images/sh2.png" },
-
-    { title: "Portable Record Crate", description: "Lightweight box to take your vinyls anywhere.", imageSrc: "src/assets/images/sh3st.png" },
-    { title: "Wooden Record Bin", description: "Deep bin with angled front for flipping through records.", imageSrc: "src/assets/images/sh4st.png" },
-
-    { title: "Vinyl Revival Pack", description: "All-in-one set with brush, fluid, and microfiber cloth.", imageSrc: "src/assets/images/sh5c.png" },
-    { title: "Vinyl Cleaning Essentials", description: "Daily care for your favorite and protect your records.", imageSrc: "src/assets/images/sh6c.png" },
+    { title: "Wall-Mount Display Shelf", description: "Open-frame shelf for showcasing your favorite records.", imageSrc: sh1 },
+    { title: "Minimalist Record Rack", description: "Layered modern shelving for small spaces.", imageSrc: sh2 },
+    { title: "Portable Record Crate", description: "Lightweight box to take your vinyls anywhere.", imageSrc: sh3 },
+    { title: "Wooden Record Bin", description: "Deep bin with angled front for flipping through records.", imageSrc: sh4 },
+    { title: "Vinyl Revival Pack", description: "All-in-one set with brush, fluid, and microfiber cloth.", imageSrc: sh5 },
+    { title: "Vinyl Cleaning Essentials", description: "Daily care for your favorite and protect your records.", imageSrc: sh6 },
   ];
 
   return (

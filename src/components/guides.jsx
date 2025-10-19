@@ -1,13 +1,19 @@
+// ✅ Import your images properly
+import G1 from "../assets/images/G1.png";
+import G2 from "../assets/images/G2.png";
+import G3 from "../assets/images/G3.png";
+import G4 from "../assets/images/G4.png";
+
 export default function Guides() {
   const gradingImages = [
-    { src: "src/assets/images/G1.png" },
-    { src: "src/assets/images/G2.png" },
-    { src: "src/assets/images/G3.png" },
-    { src: "src/assets/images/G4.png" },
+    { src: G1, alt: "Guide 1" },
+    { src: G2, alt: "Guide 2" },
+    { src: G3, alt: "Guide 3" },
+    { src: G4, alt: "Guide 4" },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen w-screen bg-[#F2D2BD] text-gray-900 overflow-x-hidden">
+    <div className="flex flex-col min-h-screen w-screen bg-[#ffefd1] text-gray-900 overflow-x-hidden">
       
       <div className="py-16 text-center">
         <h2 className="text-6xl font-bold text-center mb-4">Record Guides</h2>
